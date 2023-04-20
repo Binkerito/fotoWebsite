@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Functions</title>
+
+    </head>
+   <body>
+
+    <script>
+        console.log("hello bink");
+
+        function addNumbers(num1, num2) {
+            return num1 + num2
+
+        }
+        let x = 20 
+        let y = 7
+
+        console.log(addNumbers(12, 6)) //run this function with 12, 6 = it'll run in the returns
+        console.log(addNumbers(11, -6))
+        console.log(addNumbers(21, 1))
+        console.log(addNumbers(x, y)) //passing through the variable 
+
+        
+        function heyFriends(personName) {
+
+        return "Good morning " + personName
+        }
+        console.log(heyFriends("Vincent")) //Passing the data here to call it
+
+
+        function generation(age) {
+            if(age >= 60) {
+                result = ("Boomer");
+            }
+            else if(age >= 43 && age <=59) {
+                result = ("Gen X");
+            }
+            else if(age >= 27 && age <=42) {
+                result = ("Millenial");
+            }
+            else if(age >= 11 && age <=26) {
+                result = ("Gen Z");
+            }
+            else {
+                result = ("Gen Alpha");
+            }
+            return result 
+        }
+        console.log(generation(72))
+
+
+    </script>
+
+
+   </body> 
+
+</html>

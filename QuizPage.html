@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+
+    <ul id="menu">
+        <li class="active"><a href="index.html">Home</a> </li>
+        <li><a href="Gallery.html" target="_blank">Gallery</a> </li>
+        <li><a href="QuizPage.html" target="_blank">Quiz</a> </li>
+    </ul>
+
+    <h1> Photography quiz </h1>
+
+    <p> Let's take a quiz </p>
+
+    <form name="Quiz"> 
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" size="30"> 
+
+        <p> Women earn less than men in the same roles in many workplaces; What percentage is the pay gap between felmale photographer earning less than male photographer? </p>
+        <input type="radio" name="growth" value="20%">
+        <label for="20%"> 20% </label><br>
+        <input type="radio" name="growth" value="40%">
+        <label for="40%"> 40% </label><br>
+        <input type="radio" name="growth" value="80%">
+        <label for="80%"> 80% </label>
+
+        <br>
+        <br>
+        <label for="talent"> What percentage of people are still 
+            using analogue photography: </label>
+        <input type="number" name="talent" min="0" max="100" step="10">
+        
+        <br>
+        <p> Does Bink like Black & White or Colour photography? </p>
+
+        <input type="radio" name="film" value="B&W">
+        <label for="B&W"> Black & White </label><br>
+        <input type="radio" name="film" value="Colour">
+        <label for="Colour"> Colour </label><br>
+        <input type="radio" name="film" value="Both">
+        <label for="Both"> Both </label>
+        
+        <br>
+        <br>
+
+        <p> What year was the world's first ever (recorded) photograph taken ? </p>
+
+        <input type="radio" name="first" value="2014">
+        <label for="2014"> 2014 </label><br>
+        <input type="radio" name="first" value="1826">
+        <label for="1826"> 1826 </label><br>
+        <input type="radio" name="first" value="1920">
+        <label for="1920"> 1920 </label>
+        <br>
+        <br>
+
+        <p> On my Home page: What type of vehicle are the children in the photograph sitting on? </p>
+
+        <input type="radio" name="kids" value="Boat">
+        <label for="Boat"> The kids are sitting in a Boat </label><br>
+        <input type="radio" name="kids" value="Vespa">
+        <label for="Vespa"> The kids are sitting on a Vespa Scooter </label><br>
+        <input type="radio" name="kids" value="Truck">
+        <label for="Truck"> The kids are sitting on the back of a truck </label>
+
+        
+
+    </form>
+    <br>
+    <br>
+    <button type="button" onclick="checkAnswers();">Submit</button>
+
+    <script src="script.js"> </script>
+
+</body>       
+
+</html>
